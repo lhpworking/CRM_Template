@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CRMSystemTemplate/assets/css/myStyle.css">
+    <!-- bootstrap icon -->
+    <link rel=" stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <section class="header">
+        <div class="row">
+            <nav class="navbar">
+                <div class="container ">
+                    <nav class="navbar navbar-expand-lg ">
+                        <a class="navbar-brand logo" href="#"> <i class="bi bi-terminal-fill"></i> CRM </a>
+                        <div class="search-block d-flex">
+                            <input class="form-control me-2 rounded" style="padding-left:10px;" type="search"
+                                placeholder="Search.." aria-label="Search">
+                            <i class="bi bi-search" style="position: relative;
+                                top: 6px;
+                                left: -40px;
+                                "></i>
+                        </div>
+                    </nav>
+                    <div class="navbar navbar-expand-lg navbar-light" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false"><img src="assets/img/dog.jpeg"
+                                        width="35" height="35" class="rounded me-2" alt="...">
+                                    Ly Hung Phat
+                                </a>
+                                <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#"> View Account </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-envelope"></i>
+                                </a>
+                                <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdownMenuLink">
+                                    <li>
+                                        <div class="card-title p-2 border-bottom border-1 text-center fw-300">
+                                            Messages <span class="badge bg-secondary">2</span>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="toast show mb-2 ">
+                                            <div class="toast-header">
+                                                <img src="..." class="rounded me-2" alt="...">
+                                                <strong class="me-auto">Tran Huu Phuoc</strong> <span
+                                                    class="badge bg-danger ">New</span>
+                                                <small class="mx-2">11 mins ago</small>
+                                            </div>
+                                            <div class="toast-body">
+                                                Hello, world! This is a toast message.
+                                                Hello, world! This is a toast message.
+                                                Hello, world! This is a toast message.
+                                                Hello, world! This is a toast message.
+                                                Hello, world! This is a toast message.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="toast show mb-2">
+                                            <div class="toast-header">
+                                                <img src="..." class="rounded me-2" alt="...">
+                                                <strong class="me-auto">Ha Dang Khoa</strong> <span
+                                                    class="badge bg-danger ">New</span>
+                                                <small class="mx-2">11 mins ago</small>
+                                            </div>
+                                            <div class="toast-body">
+                                                Hello, world! This is a toast message.
+                                                Hello, world! This is a toast message.
+                                                Hello, world! This is a toast message.
+                                                Hello, world! This is a toast message.
+                                                Hello, world! This is a toast message.
+                                            </div>
+                                        </div>
+                                    </li>
+                            </li>
+                        </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Log out <i class="bi bi-box-arrow-right"></i> </a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg myNavbar sticky-top ">
+                <div class="container justify-content-center ">
+                    <ul class="navbar-nav  ">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#"> <i class="bi bi-house-door"></i>
+                                Dashboard</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-receipt-cutoff"></i> Sales Management
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Lead</a></li>
+                                <li><a class="dropdown-item" href="#">Opportunities</a></li>
+                                <li><a class="dropdown-item" href="#">Account Customer</a></li>
+                                <li><a class="dropdown-item" href="#">Contact List</a></li>
+                                <li><a class="dropdown-item" href="#">Competitors List</a></li>
+                                <li><a class="dropdown-item" href="#">Products</a></li>
+                                <li><a class="dropdown-item" href="#">Quotes</a></li>
+                                <li><a class="dropdown-item" href="#">Orders</a></li>
+                                <li><a class="dropdown-item" href="#">Invoices</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-megaphone"></i> Marketing Management
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Marketing List</a></li>
+                                <li><a class="dropdown-item" href="#">Campaigns</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-people"></i> Customer Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Cases</a></li>
+                                <li><a class="dropdown-item" href="#">Knowledge Base</a></li>
+                                <li><a class="dropdown-item" href="#">Contracts</a></li>
+                                <li><a class="dropdown-item" href="#">Resources and Resource Groups</a></li>
+                                <li><a class="dropdown-item" href="#">Services</a></li>
+                                <li><a class="dropdown-item" href="#">Service Calendar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section class="content">
+        <div class="container my-3">
+            <div class="row p-3">
+                <div class="welcome">
+                    <h2> Knowledge Base </h2>
+                </div>
+                <div class="date-block">
+                    <div class="navbar navbar-expand-lg navbar-light">
+                        <script>
+                            let date = new Date();
+                            date.toLocaleDateString();
+                            document.write(date);
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-3">
+                <div class="card rounded shadow p-3">
+                    <div class="row p-3">
+                        <div class="logo" style="font-size: 25px!important">New FAG</div>
+                    </div>
+                    <div class="row p-3">
+                        <div class="col-12">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Quote name">
+                                <label class="text-muted" for="floatingInput "> Question</label>
+                            </div>
+                        </div>
+                        <div class="col-12 ">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Address" id="floatingTextarea"></textarea>
+                                <label class="text-muted" for="floatingTextarea">Answer</label>
+                            </div>
+                        </div>
+                        <div class="col-12 p-3">
+                            <label class="form-label" for="">Active</label>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            </div>
+                        </div>
+                        <div class="col-4  p-3">
+                            <a href="#" class=" btn myBtn rounded "> <i class="bi bi-check2-circle"></i> Submit </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-3">
+                <div class="col-12">
+                    <div class="card rounded shadow   ">
+                        <div class="card-header align-items-center mb-0 ">
+                            <div class="row p-3  ">
+                                <div class="col-4">
+                                    <div class="logo" style="font-size: 25px!important">List of FAGs</div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="search-block">
+                                        <input class="form-control rounded " style="padding-left: 35px;" type="search"
+                                            placeholder="Search.." aria-label="Search">
+                                        <i class="bi bi-search" style="position: relative;
+                                            top: -32px;
+                                            left: 10px;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row p-2 align-items-center ">
+                                <div class="col-6">
+                                    <div class="filter-block d-flex ">
+                                        <div class="show-block me-2">
+                                            <label> Show </label>
+                                            <select name="" id="">
+                                                <option value="All"> All </option>
+                                            </select>
+                                        </div>
+                                        <div class="sort-block">
+                                            <label> Sort By </label>
+                                            <select name="" id="">
+                                                <option value="Ascending"> Ascending </option>
+                                                <option value="Descending"> Descending </option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="function-block float-end">
+                                        <a href="#" class="btn bg-main-color"><i class="bi bi-bar-chart"></i></a>
+                                        <a href="#" class="btn btn-primary"><i class="bi bi-folder-symlink"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="myTable align-items-center text-center">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">
+                                                <input type="checkbox">
+                                            </th>
+                                            <th scope="col">No.</th>
+                                            <th scope="col">Question</th>
+                                            <th scope="col">Answer</th>
+
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>1</td>
+                                            <td>Lhp</td>
+                                            <td>23/23 Hoa Binh, Tan Phu, hcm city</td>
+                                            <td>
+                                                <a href="#"> <small> Edit </small></a>
+                                                <a href="#"> <small> Delete </small></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination p-3 my-3 float-end ">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container p-3">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <div class="copyright text-muted text-lg-left">
+                        ©
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>,
+                        made with <i class="bi bi-heart-fill" style="color:red"></i> by Pat
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="support-block text-muted text-lg-left float-end">
+                        <div class="navbar navbar-expand-lg navbar-light">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"> Blog </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"> Help </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"> Terms </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"> Privacy </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- script -->
+    <script src="/assets/js/myScript.js"></script>
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"></script>
+
+
+</body>
+
+
+</html>
